@@ -1,7 +1,19 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+/bootstrap-tutorial/node_modules
+/react-crashcourse/node_modules
+/teamMemberAllocation/node_modules
+
+
+/bootstrap-tutorial/build
+/react-crashcourse/build
+/teamMemberAllocation/build
+
+/bootstrap-tutorial/.git
+/react-crashcourse/.git
+/teamMemberAllocation/.git
+
 /.pnp
 .pnp.js
 
