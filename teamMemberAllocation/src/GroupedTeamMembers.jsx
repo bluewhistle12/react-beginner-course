@@ -1,10 +1,10 @@
 import { useState } from "react";
+import "./GroupedTeamMembers.css";
 
 const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
+  const [groupedEmployees, setGroupedEmployees] = useState(groupTeamMembers());
 
-  const [groupedEmployees, setGroupData] = useState(groupTeamMembers());
-
-  function groupTeamMembers () {
+  function groupTeamMembers() {
     let teamArray = [];
     for (const employee of employees) {
       let myTeam = null;
@@ -27,19 +27,28 @@ const GroupedTeamMembers = ({ employees, selectedTeam, setTeam }) => {
       myTeam.members.push(employee);
     }
     return teamArray;
-  };
+  }
 
-  // function handleTeamClick(event) {
-  //   groupedEmployees.map((team) => {
-      
-  //   })
-  // }
+  function handleTeamClick(event) {
+    const newData = groupedEmployees.map((teamData) =>
+      teamData.team === event.currentTarget.id
+        ? { ...teamData, collapsed: !teamData.collapsed }
+        : teamData
+    );
+    setGroupedEmployees(newData);
+    setTeam(event.currentTarget.id);
+    console.log(newData);
+  }
 
   return (
     <div className="container">
       {groupedEmployees.map((item) => (
-        <div className="card mt-2" style={{ cursor: "pointer" }} onClick={handleTeamClick}>
-          <h4 id={item.team} className="card-header text-secondary bg-white">
+        <div className="card mt-2" style={{ cursor: "pointer" }}>
+          <h4
+            id={item.team}
+            className="card-header text-secondary bg-white"
+            onClick={handleTeamClick}
+          >
             Team Name : {item.team}
           </h4>
 

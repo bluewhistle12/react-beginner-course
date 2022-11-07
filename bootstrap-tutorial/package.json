@@ -1,0 +1,15 @@
+{
+  "name": "bootstrap-tutorial",
+  "version": "0.0.0",
+  "description": "tutorial project for bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "start" : "http-server"
+  },
+  "author": "felisZero",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "http-server": "^14.1.1"
+  }
+}
