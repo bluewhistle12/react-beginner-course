@@ -1,14 +1,15 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/bootstrap-tutorial/node_modules
-/react-crashcourse/node_modules
-/teamMemberAllocation/node_modules
-
+bootstrap-tutorial/node_modules
+react-crashcourse/node_modules
+teamMemberAllocation/node_modules
+react-concepts/node_modules
 
 /bootstrap-tutorial/build
 /react-crashcourse/build
 /teamMemberAllocation/build
+/react-concepts/build
 
 /bootstrap-tutorial/.git
 /react-crashcourse/.git
@@ -33,8 +34,3 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-
-
-## teamMemberAllocation
-
-teamMemberAllocation/node_modules

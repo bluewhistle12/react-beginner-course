@@ -1,3 +1,14 @@
+# Team  Member Allocation
+
+구현해야할것
+
+- 새로운 멤버 추가 및 삭제하기
+
+- 로그인 기능
+
+- 대시보드 사이드 바로 바꾸기
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
